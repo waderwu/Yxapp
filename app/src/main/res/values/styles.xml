@@ -1,0 +1,69 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="QMUI.Compat.NoActionBar">
+        <!-- 配置Android提供的theme -->
+        <item name="android:textAppearanceListItemSmall">@style/QDTextAppearanceListItemSmall</item>
+        <item name="android:textAppearanceListItem">@style/QDtextAppearanceListItem</item>
+        <item name="android:listPreferredItemHeight">?attr/qmui_list_item_height_higher</item>
+        <item name="android:listPreferredItemHeightSmall">?attr/qmui_list_item_height</item>
+
+        <!-- 配置qmui提供的theme -->
+        <item name="qmui_config_color_blue">@color/colorPrimary</item>
+        <item name="qmui_topbar_title_color">@color/white</item>
+        <item name="qmui_topbar_subtitle_color">@color/white</item>
+        <item name="qmui_dialog_action_text_negative_color">@color/gray</item>
+        <item name="qmui_dialog_action_text_color">@color/colorPrimary</item>
+        <item name="qmui_topbar_height">48dp</item>
+        <item name="qmui_topbar_image_btn_height">48dp</item>
+        <item name="qmui_content_spacing_horizontal">20dp</item>
+        <item name="qmui_content_padding_horizontal">16dp</item>
+
+        <item name="QMUITopBarStyle">@style/QDTopBar</item>
+
+        <!-- 配置app自己的theme -->
+        <item name="app_primary_color">@color/colorPrimary</item>
+        <item name="app_content_bg_color">@color/white</item>
+    </style>
+
+    <style name="QDtextAppearanceListItem">
+        <item name="android:textColor">?attr/qmui_config_color_black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">?attr/qmui_s_list_item_bg_with_border_bottom_inset_left
+        </item>
+    </style>
+
+    <style name="QDTextAppearanceListItemSmall">
+        <item name="android:textColor">?attr/qmui_config_color_gray_4</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">?attr/qmui_s_list_item_bg_with_border_bottom_inset_left
+        </item>
+    </style>
+
+    <style name="QDTopBar" parent="QMUI.TopBar">
+        <item name="qmui_topbar_bg_color">?attr/app_primary_color</item>
+    </style>
+
+    <!--自定义CheckBox-->
+    <style name="CustomCheckBox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/gray</item>
+    </style>
+
+    <!--自定义Switch-->
+    <style name="CustomSwitch" parent="Theme.AppCompat.Light">
+        <!--开启时的颜色-->
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <!--关闭时的颜色-->
+        <item name="colorSwitchThumbNormal">@color/gray_white</item>
+        <!--关闭时的轨迹颜色取30%的颜色-->
+        <item name="android:colorForeground">@color/gray</item>
+    </style>
+
+    <!--自定义EditText-->
+    <style name="CustomEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/gray_white</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+</resources>
